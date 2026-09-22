@@ -1,13 +1,53 @@
-// Web Audio API Sound Effects + Web Speech API (TTS) Engine
+// Web Audio API Sound Effects + Online American English Audio + Speech Synthesis Fallback
 class SoundManager {
   constructor() {
     this.ctx = null;
     this.sfxEnabled = true;
     this.ttsEnabled = true;
-    this.speechRate = 0.85; // Slightly slower for kids phonics learning
-    this.speechPitch = 1.1; // Friendly pitch
+    this.speechRate = 0.85;
+    this.speechPitch = 1.1;
     this.selectedVoice = null;
+    this.activeAudio = null;
+    this.unlocked = false;
+
     this.initVoices();
+    this.setupMobileUnlock();
+  }
+
+  // Unlock audio context and audio playback on mobile touch
+  setupMobileUnlock() {
+    if (typeof window === 'undefined') return;
+    const unlock = () => {
+      if (this.unlocked) return;
+      this.initContext();
+
+      if (this.ctx) {
+        try {
+          const buffer = this.ctx.createBuffer(1, 1, 22050);
+          const source = this.ctx.createBufferSource();
+          source.buffer = buffer;
+          source.connect(this.ctx.destination);
+          source.start(0);
+        } catch (e) {}
+      }
+
+      if ('speechSynthesis' in window) {
+        try {
+          const utter = new SpeechSynthesisUtterance(' ');
+          utter.volume = 0.01;
+          window.speechSynthesis.speak(utter);
+        } catch (e) {}
+      }
+
+      this.unlocked = true;
+      ['touchstart', 'touchend', 'click'].forEach(evt => {
+        document.removeEventListener(evt, unlock, true);
+      });
+    };
+
+    ['touchstart', 'touchend', 'click'].forEach(evt => {
+      document.addEventListener(evt, unlock, { once: false, passive: true, capture: true });
+    });
   }
 
   initContext() {
@@ -26,7 +66,6 @@ class SoundManager {
     if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
       const updateVoices = () => {
         const voices = window.speechSynthesis.getVoices();
-        // Look for clean English voices (en-US or en-GB)
         const enUS = voices.find(v => v.lang === 'en-US' && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Samantha') || v.name.includes('Jenny') || v.name.includes('Zira')));
         const anyUS = voices.find(v => v.lang === 'en-US');
         const anyEN = voices.find(v => v.lang.startsWith('en'));
@@ -74,7 +113,6 @@ class SoundManager {
   correct() {
     if (!this.sfxEnabled) return;
     this.initContext();
-    // Cheerful ascending arpeggio (C5, E5, G5, C6)
     const notes = [523.25, 659.25, 783.99, 1046.50];
     notes.forEach((freq, idx) => {
       this.playBeep(freq, 'sine', 0.18, 0.15, idx * 0.08);
@@ -84,7 +122,6 @@ class SoundManager {
   wrong() {
     if (!this.sfxEnabled) return;
     this.initContext();
-    // Low double buzz
     this.playBeep(220, 'sawtooth', 0.18, 0.12, 0);
     this.playBeep(180, 'sawtooth', 0.22, 0.12, 0.14);
   }
@@ -92,7 +129,6 @@ class SoundManager {
   star() {
     if (!this.sfxEnabled) return;
     this.initContext();
-    // Magical sparkle chords
     const notes = [659.25, 830.61, 987.77, 1318.51, 1567.98];
     notes.forEach((freq, idx) => {
       this.playBeep(freq, 'triangle', 0.25, 0.12, idx * 0.06);
@@ -102,7 +138,6 @@ class SoundManager {
   levelComplete() {
     if (!this.sfxEnabled) return;
     this.initContext();
-    // Victory fanfare
     const chords = [
       { f: 523.25, t: 0 },
       { f: 659.25, t: 0.12 },
@@ -116,24 +151,139 @@ class SoundManager {
     });
   }
 
+  // Online human voice audio URLs (Type 2 = American English)
+  getOnlineAudioUrls(word) {
+    const clean = word.toLowerCase().trim().replace(/[^a-zA-Z\s-]/g, '');
+    if (!clean) return [];
+    const encoded = encodeURIComponent(clean);
+    return [
+      'https://dict.youdao.com/dictvoice?audio=' + encoded + '&type=2',
+      'https://ssl.gstatic.com/dictionary/static/sounds/20200429/' + encoded + '--_us_1.mp3'
+    ];
+  }
+
+  // Play cloud real MP3 audio first, fallback to TTS
   speak(text, onEnd = null, rateOverride = null) {
-    if (!this.ttsEnabled || typeof window === 'undefined' || !('speechSynthesis' in window)) {
-      if (onEnd) setTimeout(onEnd, 500);
+    if (!this.ttsEnabled) {
+      if (onEnd) setTimeout(onEnd, 300);
+      return;
+    }
+
+    this.initContext();
+
+    const isStandardWord = /^[a-zA-Z]+(\s+[a-zA-Z]+)*$/.test(text.trim());
+    if (isStandardWord && typeof Audio !== 'undefined') {
+      this.playCloudAudio(text.trim(), onEnd, () => {
+        this.speakTTS(text, onEnd, rateOverride);
+      });
+    } else {
+      this.speakTTS(text, onEnd, rateOverride);
+    }
+  }
+
+  playCloudAudio(word, onEnd, onFail) {
+    const urls = this.getOnlineAudioUrls(word);
+    let urlIdx = 0;
+    let finished = false;
+
+    const stopActive = () => {
+      if (this.activeAudio) {
+        try {
+          this.activeAudio.pause();
+          this.activeAudio.currentTime = 0;
+        } catch (e) {}
+        this.activeAudio = null;
+      }
+    };
+
+    const tryNext = () => {
+      if (urlIdx >= urls.length) {
+        if (!finished) {
+          finished = true;
+          onFail();
+        }
+        return;
+      }
+
+      stopActive();
+      const audio = new Audio();
+      this.activeAudio = audio;
+      let timer = null;
+
+      const cleanup = () => {
+        if (timer) clearTimeout(timer);
+        audio.oncanplaythrough = null;
+        audio.onended = null;
+        audio.onerror = null;
+      };
+
+      timer = setTimeout(() => {
+        cleanup();
+        urlIdx++;
+        tryNext();
+      }, 2500);
+
+      audio.onended = () => {
+        cleanup();
+        if (!finished) {
+          finished = true;
+          this.activeAudio = null;
+          if (onEnd) onEnd();
+        }
+      };
+
+      audio.onerror = () => {
+        cleanup();
+        urlIdx++;
+        tryNext();
+      };
+
+      audio.src = urls[urlIdx];
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(err => {
+          console.warn('Audio play rejection:', err);
+          cleanup();
+          urlIdx++;
+          tryNext();
+        });
+      }
+    };
+
+    tryNext();
+  }
+
+  speakTTS(text, onEnd = null, rateOverride = null) {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
+      if (onEnd) setTimeout(onEnd, 400);
       return;
     }
 
     try {
-      window.speechSynthesis.cancel(); // Stop any pending speech
-      const utter = new SpeechSynthesisUtterance(text);
+      window.speechSynthesis.cancel();
+      let pronounceText = text;
+      if (pronounceText === 'a_e') pronounceText = 'ay';
+      if (pronounceText === 'i_e') pronounceText = 'eye';
+      if (pronounceText === 'o_e') pronounceText = 'oh';
+      if (pronounceText === 'u_e') pronounceText = 'you';
+
+      const utter = new SpeechSynthesisUtterance(pronounceText);
       utter.lang = 'en-US';
       if (this.selectedVoice) utter.voice = this.selectedVoice;
       utter.rate = rateOverride || this.speechRate;
       utter.pitch = this.speechPitch;
 
-      if (onEnd) {
-        utter.onend = onEnd;
-        utter.onerror = () => { if (onEnd) onEnd(); };
-      }
+      let called = false;
+      const finish = () => {
+        if (!called) {
+          called = true;
+          if (onEnd) onEnd();
+        }
+      };
+
+      utter.onend = finish;
+      utter.onerror = finish;
+      setTimeout(finish, 2000);
 
       window.speechSynthesis.speak(utter);
     } catch (e) {
@@ -142,8 +292,6 @@ class SoundManager {
     }
   }
 
-  // Spell phonics parts one by one, then say the whole word
-  // e.g., ["c", "a", "t"] -> "k", "æ", "t" -> "cat!"
   spellPhonics(breakdown, fullWord, callback) {
     if (!breakdown || breakdown.length === 0) {
       this.speak(fullWord, callback);
@@ -155,15 +303,14 @@ class SoundManager {
       if (idx < breakdown.length) {
         const part = breakdown[idx];
         idx++;
-        this.speak(part, () => {
+        this.speakTTS(part, () => {
           setTimeout(speakNext, 250);
         }, 0.75);
       } else {
-        // Finally blend and say full word
         setTimeout(() => {
           this.correct();
           this.speak(fullWord, callback, 0.85);
-        }, 300);
+        }, 350);
       }
     };
     speakNext();
