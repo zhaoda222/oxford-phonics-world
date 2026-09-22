@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4338CA"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="42" fill="url(#bgGrad)"/>
+  <text x="96" y="96" font-size="80" text-anchor="middle" dominant-baseline="central">🦁</text>
+  <text x="96" y="156" font-size="22" font-family="system-ui, -apple-system, sans-serif" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">PHONICS</text>
+</svg>

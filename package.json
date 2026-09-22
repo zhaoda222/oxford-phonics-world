@@ -1,0 +1,12 @@
+{
+  "name": "oxford-phonics-world",
+  "version": "1.0.0",
+  "description": "Oxford Phonics World 1-3 Android Mobile Application",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
