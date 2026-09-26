@@ -1,4 +1,4 @@
-# Oxford Phonics World (Levels 1-3) 安卓与全平台互动学习应用
+# Oxford Phonics World (Levels 1-5) 安卓与全平台互动学习应用
 
 仿照 Oxford Phonics World 官方移动端打造的 **自然拼读互动学习与练习 App**。涵盖 **Level 1 至 Level 3 全部 24 个单元、260+ 核心词汇**，支持纯正英语发音、音效激励、闪卡翻转、听音辨词及拼写小游戏。
 
@@ -6,7 +6,7 @@
 
 ## 🌟 核心功能特色
 
-1. **三阶完整课程体系 (1-3 级)**
+1. **三阶完整课程体系 (1-5 级)**
    - **Level 1: The Alphabet (字母发音与首音)**: Aa-Zz 26 个英文字母纯正发音及 100+ 基础启蒙词汇（Unit 1 至 Unit 8）。
    - **Level 2: Short Vowels (短元音与辅音结合)**: 短元音 a, e, i, o, u，包含 -am/-an, -ap/-at, -en/-et, -in/-it, -og/-ot, -ug/-ut 等拼读族（Unit 1 至 Unit 8）。
    - **Level 3: Long Vowels (长元音与魔术 e)**: 长元音 a_e, i_e, o_e, u_e，以及 ai/ay, ee/ea, oa/ow 等双元音拼读规则（Unit 1 至 Unit 8）。

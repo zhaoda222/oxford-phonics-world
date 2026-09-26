@@ -1,6 +1,6 @@
 const PHONICS_DATA = {
-  "version": "1.0.0",
-  "title": "Oxford Phonics World 1-3 Interactive Learning & Practice",
+  "version": "1.1.0",
+  "title": "Oxford Phonics World 1-5 Interactive Learning & Practice",
   "levels": [
     {
       "id": 1,
@@ -3190,7 +3190,2467 @@ const PHONICS_DATA = {
           ]
         }
       ]
+    },
+    {
+      "id": 4,
+      "name": "Level 4",
+      "title": "Consonant Blends (辅音连读与复合辅音)",
+      "themeColor": "#EC4899",
+      "accentColor": "#F472B6",
+      "badge": "双辅音",
+      "desc": "系统掌握辅音连缀(bl, cl, br, cr, dr, tr等)、鼻音连音及复合辅音(sh, ch, th, ph, wh)",
+      "units": [
+        {
+          "id": "l4-u1",
+          "unitNum": 1,
+          "target": "bl, cl, fl, gl",
+          "targetPhonics": "/bl/, /kl/, /fl/, /ɡl/",
+          "words": [
+            {
+              "word": "black",
+              "ph": "/blæk/",
+              "meaning": "黑色",
+              "emoji": "⬛",
+              "phonicsBreakdown": [
+                "bl",
+                "a",
+                "ck"
+              ],
+              "example": "The black cat is cute."
+            },
+            {
+              "word": "blue",
+              "ph": "/bluː/",
+              "meaning": "蓝色",
+              "emoji": "💙",
+              "phonicsBreakdown": [
+                "bl",
+                "ue"
+              ],
+              "example": "The sky is bright blue."
+            },
+            {
+              "word": "blow",
+              "ph": "/bloʊ/",
+              "meaning": "吹气",
+              "emoji": "💨",
+              "phonicsBreakdown": [
+                "bl",
+                "ow"
+              ],
+              "example": "Blow out the candles."
+            },
+            {
+              "word": "clock",
+              "ph": "/klɒk/",
+              "meaning": "时钟",
+              "emoji": "⏰",
+              "phonicsBreakdown": [
+                "cl",
+                "o",
+                "ck"
+              ],
+              "example": "Look at the wall clock."
+            },
+            {
+              "word": "cloud",
+              "ph": "/klaʊd/",
+              "meaning": "云朵",
+              "emoji": "☁️",
+              "phonicsBreakdown": [
+                "cl",
+                "ou",
+                "d"
+              ],
+              "example": "A fluffy white cloud."
+            },
+            {
+              "word": "clown",
+              "ph": "/klaʊn/",
+              "meaning": "小丑",
+              "emoji": "🤡",
+              "phonicsBreakdown": [
+                "cl",
+                "ow",
+                "n"
+              ],
+              "example": "The funny clown laughs."
+            },
+            {
+              "word": "clap",
+              "ph": "/klæp/",
+              "meaning": "鼓掌",
+              "emoji": "👏",
+              "phonicsBreakdown": [
+                "cl",
+                "a",
+                "p"
+              ],
+              "example": "Clap your hands."
+            },
+            {
+              "word": "flag",
+              "ph": "/flæɡ/",
+              "meaning": "旗帜",
+              "emoji": "🚩",
+              "phonicsBreakdown": [
+                "fl",
+                "a",
+                "g"
+              ],
+              "example": "Wave the flag high."
+            },
+            {
+              "word": "fly",
+              "ph": "/flaɪ/",
+              "meaning": "飞翔",
+              "emoji": "🪰",
+              "phonicsBreakdown": [
+                "fl",
+                "y"
+              ],
+              "example": "Birds fly in the sky."
+            },
+            {
+              "word": "flute",
+              "ph": "/fluːt/",
+              "meaning": "长笛",
+              "emoji": "🪈",
+              "phonicsBreakdown": [
+                "fl",
+                "u_e",
+                "t"
+              ],
+              "example": "Play a song on the flute."
+            },
+            {
+              "word": "glad",
+              "ph": "/ɡlæd/",
+              "meaning": "高兴的",
+              "emoji": "😊",
+              "phonicsBreakdown": [
+                "gl",
+                "a",
+                "d"
+              ],
+              "example": "I am glad to see you."
+            },
+            {
+              "word": "glass",
+              "ph": "/ɡlæs/",
+              "meaning": "玻璃杯",
+              "emoji": "🥛",
+              "phonicsBreakdown": [
+                "gl",
+                "a",
+                "ss"
+              ],
+              "example": "A clean glass of milk."
+            },
+            {
+              "word": "glove",
+              "ph": "/ɡlʌv/",
+              "meaning": "手套",
+              "emoji": "🧤",
+              "phonicsBreakdown": [
+                "gl",
+                "o",
+                "ve"
+              ],
+              "example": "Put on your warm glove."
+            },
+            {
+              "word": "glue",
+              "ph": "/ɡluː/",
+              "meaning": "胶水",
+              "emoji": "🧴",
+              "phonicsBreakdown": [
+                "gl",
+                "ue"
+              ],
+              "example": "Stick paper with glue."
+            }
+          ]
+        },
+        {
+          "id": "l4-u2",
+          "unitNum": 2,
+          "target": "pl, sl, br, cr",
+          "targetPhonics": "/pl/, /sl/, /br/, /kr/",
+          "words": [
+            {
+              "word": "plate",
+              "ph": "/pleɪt/",
+              "meaning": "盘子",
+              "emoji": "🍽️",
+              "phonicsBreakdown": [
+                "pl",
+                "a_e",
+                "te"
+              ],
+              "example": "Put food on the plate."
+            },
+            {
+              "word": "plane",
+              "ph": "/pleɪn/",
+              "meaning": "飞机",
+              "emoji": "✈️",
+              "phonicsBreakdown": [
+                "pl",
+                "a_e",
+                "ne"
+              ],
+              "example": "The plane flies high."
+            },
+            {
+              "word": "plum",
+              "ph": "/plʌm/",
+              "meaning": "李子",
+              "emoji": "🫐",
+              "phonicsBreakdown": [
+                "pl",
+                "u",
+                "m"
+              ],
+              "example": "A sweet juicy purple plum."
+            },
+            {
+              "word": "plant",
+              "ph": "/plænt/",
+              "meaning": "植物",
+              "emoji": "🪴",
+              "phonicsBreakdown": [
+                "pl",
+                "a",
+                "nt"
+              ],
+              "example": "Water the green plant."
+            },
+            {
+              "word": "sleep",
+              "ph": "/sliːp/",
+              "meaning": "睡觉",
+              "emoji": "😴",
+              "phonicsBreakdown": [
+                "sl",
+                "ee",
+                "p"
+              ],
+              "example": "Time to go to sleep."
+            },
+            {
+              "word": "slide",
+              "ph": "/slaɪd/",
+              "meaning": "滑梯",
+              "emoji": "🛝",
+              "phonicsBreakdown": [
+                "sl",
+                "i_e",
+                "de"
+              ],
+              "example": "Slide down the big slide."
+            },
+            {
+              "word": "slow",
+              "ph": "/sloʊ/",
+              "meaning": "慢的",
+              "emoji": "🐢",
+              "phonicsBreakdown": [
+                "sl",
+                "ow"
+              ],
+              "example": "Turtles walk slow."
+            },
+            {
+              "word": "sled",
+              "ph": "/sled/",
+              "meaning": "雪橇",
+              "emoji": "🛷",
+              "phonicsBreakdown": [
+                "sl",
+                "e",
+                "d"
+              ],
+              "example": "Ride a sled on snow."
+            },
+            {
+              "word": "brown",
+              "ph": "/braʊn/",
+              "meaning": "棕色",
+              "emoji": "🟫",
+              "phonicsBreakdown": [
+                "br",
+                "ow",
+                "n"
+              ],
+              "example": "A brown teddy bear."
+            },
+            {
+              "word": "bread",
+              "ph": "/bred/",
+              "meaning": "面包",
+              "emoji": "🍞",
+              "phonicsBreakdown": [
+                "br",
+                "ea",
+                "d"
+              ],
+              "example": "Warm fresh bread."
+            },
+            {
+              "word": "bride",
+              "ph": "/braɪd/",
+              "meaning": "新娘",
+              "emoji": "👰",
+              "phonicsBreakdown": [
+                "br",
+                "i_e",
+                "de"
+              ],
+              "example": "The beautiful bride smiles."
+            },
+            {
+              "word": "broom",
+              "ph": "/bruːm/",
+              "meaning": "扫帚",
+              "emoji": "🧹",
+              "phonicsBreakdown": [
+                "br",
+                "oo",
+                "m"
+              ],
+              "example": "Sweep with a broom."
+            },
+            {
+              "word": "crab",
+              "ph": "/kræb/",
+              "meaning": "螃蟹",
+              "emoji": "🦀",
+              "phonicsBreakdown": [
+                "cr",
+                "a",
+                "b"
+              ],
+              "example": "A red crab on the beach."
+            },
+            {
+              "word": "cry",
+              "ph": "/kraɪ/",
+              "meaning": "哭泣",
+              "emoji": "😢",
+              "phonicsBreakdown": [
+                "cr",
+                "y"
+              ],
+              "example": "Do not cry, be happy."
+            },
+            {
+              "word": "crown",
+              "ph": "/kraʊn/",
+              "meaning": "王冠",
+              "emoji": "👑",
+              "phonicsBreakdown": [
+                "cr",
+                "ow",
+                "n"
+              ],
+              "example": "A shiny golden crown."
+            }
+          ]
+        },
+        {
+          "id": "l4-u3",
+          "unitNum": 3,
+          "target": "dr, tr, fr, gr, pr",
+          "targetPhonics": "/dr/, /tr/, /fr/, /ɡr/, /pr/",
+          "words": [
+            {
+              "word": "drum",
+              "ph": "/drʌm/",
+              "meaning": "鼓",
+              "emoji": "🥁",
+              "phonicsBreakdown": [
+                "dr",
+                "u",
+                "m"
+              ],
+              "example": "Beat the drum to the music."
+            },
+            {
+              "word": "dress",
+              "ph": "/dres/",
+              "meaning": "连衣裙",
+              "emoji": "👗",
+              "phonicsBreakdown": [
+                "dr",
+                "e",
+                "ss"
+              ],
+              "example": "She wears a pink dress."
+            },
+            {
+              "word": "draw",
+              "ph": "/drɔː/",
+              "meaning": "画画",
+              "emoji": "🎨",
+              "phonicsBreakdown": [
+                "dr",
+                "aw"
+              ],
+              "example": "Draw a colorful rainbow."
+            },
+            {
+              "word": "tree",
+              "ph": "/triː/",
+              "meaning": "树木",
+              "emoji": "🌳",
+              "phonicsBreakdown": [
+                "tr",
+                "ee"
+              ],
+              "example": "A tall green tree."
+            },
+            {
+              "word": "truck",
+              "ph": "/trʌk/",
+              "meaning": "卡车",
+              "emoji": "🚚",
+              "phonicsBreakdown": [
+                "tr",
+                "u",
+                "ck"
+              ],
+              "example": "A big cargo truck."
+            },
+            {
+              "word": "train",
+              "ph": "/treɪn/",
+              "meaning": "火车",
+              "emoji": "🚂",
+              "phonicsBreakdown": [
+                "tr",
+                "ai",
+                "n"
+              ],
+              "example": "Hear the train whistle blow."
+            },
+            {
+              "word": "frog",
+              "ph": "/frɒɡ/",
+              "meaning": "青蛙",
+              "emoji": "🐸",
+              "phonicsBreakdown": [
+                "fr",
+                "o",
+                "g"
+              ],
+              "example": "The green frog hops."
+            },
+            {
+              "word": "fruit",
+              "ph": "/fruːt/",
+              "meaning": "水果",
+              "emoji": "🍎",
+              "phonicsBreakdown": [
+                "fr",
+                "ui",
+                "t"
+              ],
+              "example": "Fresh sweet fruit."
+            },
+            {
+              "word": "grapes",
+              "ph": "/ɡreɪps/",
+              "meaning": "葡萄",
+              "emoji": "🍇",
+              "phonicsBreakdown": [
+                "gr",
+                "a_e",
+                "ps"
+              ],
+              "example": "A bunch of purple grapes."
+            },
+            {
+              "word": "green",
+              "ph": "/ɡriːn/",
+              "meaning": "绿色",
+              "emoji": "🟩",
+              "phonicsBreakdown": [
+                "gr",
+                "ee",
+                "n"
+              ],
+              "example": "Spring grass is green."
+            },
+            {
+              "word": "grass",
+              "ph": "/ɡræs/",
+              "meaning": "草地",
+              "emoji": "🌱",
+              "phonicsBreakdown": [
+                "gr",
+                "a",
+                "ss"
+              ],
+              "example": "Sit on the soft green grass."
+            },
+            {
+              "word": "prize",
+              "ph": "/praɪz/",
+              "meaning": "奖品",
+              "emoji": "🏆",
+              "phonicsBreakdown": [
+                "pr",
+                "i_e",
+                "ze"
+              ],
+              "example": "Win the first prize."
+            },
+            {
+              "word": "prince",
+              "ph": "/prɪns/",
+              "meaning": "王子",
+              "emoji": "🤴",
+              "phonicsBreakdown": [
+                "pr",
+                "i",
+                "nce"
+              ],
+              "example": "The brave prince smiles."
+            }
+          ]
+        },
+        {
+          "id": "l4-u4",
+          "unitNum": 4,
+          "target": "sm, sn, sp, sw, st",
+          "targetPhonics": "/sm/, /sn/, /sp/, /sw/, /st/",
+          "words": [
+            {
+              "word": "smile",
+              "ph": "/smaɪl/",
+              "meaning": "微笑",
+              "emoji": "😊",
+              "phonicsBreakdown": [
+                "sm",
+                "i_e",
+                "le"
+              ],
+              "example": "Give a bright sweet smile."
+            },
+            {
+              "word": "small",
+              "ph": "/smɔːl/",
+              "meaning": "小的",
+              "emoji": "🤏",
+              "phonicsBreakdown": [
+                "sm",
+                "all"
+              ],
+              "example": "A small mouse eats cheese."
+            },
+            {
+              "word": "smoke",
+              "ph": "/smoʊk/",
+              "meaning": "烟",
+              "emoji": "💨",
+              "phonicsBreakdown": [
+                "sm",
+                "o_e",
+                "ke"
+              ],
+              "example": "Smoke rises into the air."
+            },
+            {
+              "word": "snake",
+              "ph": "/sneɪk/",
+              "meaning": "蛇",
+              "emoji": "🐍",
+              "phonicsBreakdown": [
+                "sn",
+                "a_e",
+                "ke"
+              ],
+              "example": "The snake slithers silently."
+            },
+            {
+              "word": "snail",
+              "ph": "/sneɪl/",
+              "meaning": "蜗牛",
+              "emoji": "🐌",
+              "phonicsBreakdown": [
+                "sn",
+                "ai",
+                "l"
+              ],
+              "example": "A tiny snail crawls slow."
+            },
+            {
+              "word": "snow",
+              "ph": "/snoʊ/",
+              "meaning": "雪",
+              "emoji": "❄️",
+              "phonicsBreakdown": [
+                "sn",
+                "ow"
+              ],
+              "example": "Cold white snow falls."
+            },
+            {
+              "word": "spoon",
+              "ph": "/spuːn/",
+              "meaning": "勺子",
+              "emoji": "🥄",
+              "phonicsBreakdown": [
+                "sp",
+                "oo",
+                "n"
+              ],
+              "example": "Eat soup with a spoon."
+            },
+            {
+              "word": "spot",
+              "ph": "/spɒt/",
+              "meaning": "斑点",
+              "emoji": "⚪",
+              "phonicsBreakdown": [
+                "sp",
+                "o",
+                "t"
+              ],
+              "example": "A cute spot on the dog."
+            },
+            {
+              "word": "spider",
+              "ph": "/ˈspaɪ.dər/",
+              "meaning": "蜘蛛",
+              "emoji": "🕷️",
+              "phonicsBreakdown": [
+                "sp",
+                "i",
+                "der"
+              ],
+              "example": "The spider spins a web."
+            },
+            {
+              "word": "swim",
+              "ph": "/swɪm/",
+              "meaning": "游泳",
+              "emoji": "🏊",
+              "phonicsBreakdown": [
+                "sw",
+                "i",
+                "m"
+              ],
+              "example": "Fish swim in the pond."
+            },
+            {
+              "word": "sweet",
+              "ph": "/swiːt/",
+              "meaning": "甜的",
+              "emoji": "🍬",
+              "phonicsBreakdown": [
+                "sw",
+                "ee",
+                "t"
+              ],
+              "example": "Candy is yummy and sweet."
+            },
+            {
+              "word": "swan",
+              "ph": "/swɒn/",
+              "meaning": "天鹅",
+              "emoji": "🦢",
+              "phonicsBreakdown": [
+                "sw",
+                "a",
+                "n"
+              ],
+              "example": "A white swan on the lake."
+            },
+            {
+              "word": "stop",
+              "ph": "/stɒp/",
+              "meaning": "停止",
+              "emoji": "🛑",
+              "phonicsBreakdown": [
+                "st",
+                "o",
+                "p"
+              ],
+              "example": "Stop at the red light."
+            },
+            {
+              "word": "star",
+              "ph": "/stɑːr/",
+              "meaning": "星星",
+              "emoji": "⭐",
+              "phonicsBreakdown": [
+                "st",
+                "ar"
+              ],
+              "example": "Twinkle twinkle little star."
+            }
+          ]
+        },
+        {
+          "id": "l4-u5",
+          "unitNum": 5,
+          "target": "sh, ch, tch, ph, wh",
+          "targetPhonics": "/ʃ/, /tʃ/, /f/, /w/",
+          "words": [
+            {
+              "word": "ship",
+              "ph": "/ʃɪp/",
+              "meaning": "大轮船",
+              "emoji": "🚢",
+              "phonicsBreakdown": [
+                "sh",
+                "i",
+                "p"
+              ],
+              "example": "Sail across the ocean in a ship."
+            },
+            {
+              "word": "shop",
+              "ph": "/ʃɒp/",
+              "meaning": "商店",
+              "emoji": "🏪",
+              "phonicsBreakdown": [
+                "sh",
+                "o",
+                "p"
+              ],
+              "example": "Buy snacks at the shop."
+            },
+            {
+              "word": "fish",
+              "ph": "/fɪʃ/",
+              "meaning": "鱼",
+              "emoji": "🐟",
+              "phonicsBreakdown": [
+                "f",
+                "i",
+                "sh"
+              ],
+              "example": "Goldfish swim in the pond."
+            },
+            {
+              "word": "shell",
+              "ph": "/ʃel/",
+              "meaning": "贝壳",
+              "emoji": "🐚",
+              "phonicsBreakdown": [
+                "sh",
+                "e",
+                "ll"
+              ],
+              "example": "Find a pretty seashell."
+            },
+            {
+              "word": "chin",
+              "ph": "/tʃɪn/",
+              "meaning": "下巴",
+              "emoji": "🧔",
+              "phonicsBreakdown": [
+                "ch",
+                "i",
+                "n"
+              ],
+              "example": "Touch your chin gently."
+            },
+            {
+              "word": "chair",
+              "ph": "/tʃer/",
+              "meaning": "椅子",
+              "emoji": "🪑",
+              "phonicsBreakdown": [
+                "ch",
+                "air"
+              ],
+              "example": "Sit on the wooden chair."
+            },
+            {
+              "word": "chick",
+              "ph": "/tʃɪk/",
+              "meaning": "小鸡",
+              "emoji": "🐥",
+              "phonicsBreakdown": [
+                "ch",
+                "i",
+                "ck"
+              ],
+              "example": "A fluffy yellow chick."
+            },
+            {
+              "word": "catch",
+              "ph": "/kætʃ/",
+              "meaning": "抓住",
+              "emoji": "⚾",
+              "phonicsBreakdown": [
+                "c",
+                "a",
+                "tch"
+              ],
+              "example": "Catch the red ball."
+            },
+            {
+              "word": "watch",
+              "ph": "/wɒtʃ/",
+              "meaning": "手表/看",
+              "emoji": "⌚",
+              "phonicsBreakdown": [
+                "w",
+                "a",
+                "tch"
+              ],
+              "example": "Look at the wrist watch."
+            },
+            {
+              "word": "phone",
+              "ph": "/foʊn/",
+              "meaning": "电话",
+              "emoji": "📱",
+              "phonicsBreakdown": [
+                "ph",
+                "o_e",
+                "ne"
+              ],
+              "example": "Call me on the phone."
+            },
+            {
+              "word": "photo",
+              "ph": "/ˈfoʊ.toʊ/",
+              "meaning": "照片",
+              "emoji": "📷",
+              "phonicsBreakdown": [
+                "ph",
+                "o",
+                "to"
+              ],
+              "example": "Take a family photo."
+            },
+            {
+              "word": "whale",
+              "ph": "/weɪl/",
+              "meaning": "鲸鱼",
+              "emoji": "🐋",
+              "phonicsBreakdown": [
+                "wh",
+                "a_e",
+                "le"
+              ],
+              "example": "The giant blue whale."
+            },
+            {
+              "word": "white",
+              "ph": "/waɪt/",
+              "meaning": "白色",
+              "emoji": "⚪",
+              "phonicsBreakdown": [
+                "wh",
+                "i_e",
+                "te"
+              ],
+              "example": "Snow is pure white."
+            },
+            {
+              "word": "wheel",
+              "ph": "/wiːl/",
+              "meaning": "轮子",
+              "emoji": "🛞",
+              "phonicsBreakdown": [
+                "wh",
+                "ee",
+                "l"
+              ],
+              "example": "The bus wheels go round."
+            }
+          ]
+        },
+        {
+          "id": "l4-u6",
+          "unitNum": 6,
+          "target": "th (清/浊), ck, qu",
+          "targetPhonics": "/θ/, /ð/, /k/, /kw/",
+          "words": [
+            {
+              "word": "thin",
+              "ph": "/θɪn/",
+              "meaning": "薄的/瘦的",
+              "emoji": "📏",
+              "phonicsBreakdown": [
+                "th",
+                "i",
+                "n"
+              ],
+              "example": "A thin sheet of paper."
+            },
+            {
+              "word": "thumb",
+              "ph": "/θʌm/",
+              "meaning": "大拇指",
+              "emoji": "👍",
+              "phonicsBreakdown": [
+                "th",
+                "u",
+                "mb"
+              ],
+              "example": "Show a thumbs up."
+            },
+            {
+              "word": "bath",
+              "ph": "/bæθ/",
+              "meaning": "洗澡",
+              "emoji": "🛁",
+              "phonicsBreakdown": [
+                "b",
+                "a",
+                "th"
+              ],
+              "example": "Take a warm relaxing bath."
+            },
+            {
+              "word": "teeth",
+              "ph": "/tiːθ/",
+              "meaning": "牙齿",
+              "emoji": "🦷",
+              "phonicsBreakdown": [
+                "t",
+                "ee",
+                "th"
+              ],
+              "example": "Brush your teeth clean."
+            },
+            {
+              "word": "this",
+              "ph": "/ðɪs/",
+              "meaning": "这个",
+              "emoji": "👉",
+              "phonicsBreakdown": [
+                "th",
+                "i",
+                "s"
+              ],
+              "example": "Look at this picture."
+            },
+            {
+              "word": "that",
+              "ph": "/ðæt/",
+              "meaning": "那个",
+              "emoji": "👉",
+              "phonicsBreakdown": [
+                "th",
+                "a",
+                "t"
+              ],
+              "example": "Look at that bird."
+            },
+            {
+              "word": "mother",
+              "ph": "/ˈmʌð.ər/",
+              "meaning": "妈妈",
+              "emoji": "👩",
+              "phonicsBreakdown": [
+                "m",
+                "o",
+                "th",
+                "er"
+              ],
+              "example": "My loving mother."
+            },
+            {
+              "word": "duck",
+              "ph": "/dʌk/",
+              "meaning": "鸭子",
+              "emoji": "🦆",
+              "phonicsBreakdown": [
+                "d",
+                "u",
+                "ck"
+              ],
+              "example": "The yellow duck swims."
+            },
+            {
+              "word": "sock",
+              "ph": "/sɒk/",
+              "meaning": "袜子",
+              "emoji": "🧦",
+              "phonicsBreakdown": [
+                "s",
+                "o",
+                "ck"
+              ],
+              "example": "Wear warm clean socks."
+            },
+            {
+              "word": "lock",
+              "ph": "/lɒk/",
+              "meaning": "锁",
+              "emoji": "🔒",
+              "phonicsBreakdown": [
+                "l",
+                "o",
+                "ck"
+              ],
+              "example": "Lock the front door."
+            },
+            {
+              "word": "queen",
+              "ph": "/kwiːn/",
+              "meaning": "女王",
+              "emoji": "👸",
+              "phonicsBreakdown": [
+                "qu",
+                "ee",
+                "n"
+              ],
+              "example": "The queen wears a crown."
+            },
+            {
+              "word": "quack",
+              "ph": "/kwæk/",
+              "meaning": "嘎嘎叫",
+              "emoji": "🦆",
+              "phonicsBreakdown": [
+                "qu",
+                "a",
+                "ck"
+              ],
+              "example": "Ducks quack happily."
+            },
+            {
+              "word": "quiet",
+              "ph": "/ˈkwaɪ.ət/",
+              "meaning": "安静的",
+              "emoji": "🤫",
+              "phonicsBreakdown": [
+                "qu",
+                "i",
+                "et"
+              ],
+              "example": "Be quiet in library."
+            }
+          ]
+        },
+        {
+          "id": "l4-u7",
+          "unitNum": 7,
+          "target": "ng, nk, nd, nt",
+          "targetPhonics": "/ŋ/, /ŋk/, /nd/, /nt/",
+          "words": [
+            {
+              "word": "ring",
+              "ph": "/rɪŋ/",
+              "meaning": "戒指",
+              "emoji": "💍",
+              "phonicsBreakdown": [
+                "r",
+                "i",
+                "ng"
+              ],
+              "example": "A shiny golden ring."
+            },
+            {
+              "word": "king",
+              "ph": "/kɪŋ/",
+              "meaning": "国王",
+              "emoji": "🤴",
+              "phonicsBreakdown": [
+                "k",
+                "i",
+                "ng"
+              ],
+              "example": "The kind wise king."
+            },
+            {
+              "word": "sing",
+              "ph": "/sɪŋ/",
+              "meaning": "唱歌",
+              "emoji": "🎤",
+              "phonicsBreakdown": [
+                "s",
+                "i",
+                "ng"
+              ],
+              "example": "Sing a cheerful song."
+            },
+            {
+              "word": "wing",
+              "ph": "/wɪŋ/",
+              "meaning": "翅膀",
+              "emoji": "🪽",
+              "phonicsBreakdown": [
+                "w",
+                "i",
+                "ng"
+              ],
+              "example": "Birds spread their wings."
+            },
+            {
+              "word": "pink",
+              "ph": "/pɪŋk/",
+              "meaning": "粉色",
+              "emoji": "🌸",
+              "phonicsBreakdown": [
+                "p",
+                "i",
+                "nk"
+              ],
+              "example": "A pretty pink ribbon."
+            },
+            {
+              "word": "bank",
+              "ph": "/bæŋk/",
+              "meaning": "银行/河岸",
+              "emoji": "🏦",
+              "phonicsBreakdown": [
+                "b",
+                "a",
+                "nk"
+              ],
+              "example": "Save money in the bank."
+            },
+            {
+              "word": "sink",
+              "ph": "/sɪŋk/",
+              "meaning": "水槽",
+              "emoji": "🚰",
+              "phonicsBreakdown": [
+                "s",
+                "i",
+                "nk"
+              ],
+              "example": "Wash hands in the sink."
+            },
+            {
+              "word": "hand",
+              "ph": "/hænd/",
+              "meaning": "手",
+              "emoji": "✋",
+              "phonicsBreakdown": [
+                "h",
+                "a",
+                "nd"
+              ],
+              "example": "Wave your right hand."
+            },
+            {
+              "word": "sand",
+              "ph": "/sænd/",
+              "meaning": "沙子",
+              "emoji": "🏖️",
+              "phonicsBreakdown": [
+                "s",
+                "a",
+                "nd"
+              ],
+              "example": "Play with warm beach sand."
+            },
+            {
+              "word": "pond",
+              "ph": "/pɒnd/",
+              "meaning": "池塘",
+              "emoji": "💧",
+              "phonicsBreakdown": [
+                "p",
+                "o",
+                "nd"
+              ],
+              "example": "Frogs leap in the pond."
+            },
+            {
+              "word": "tent",
+              "ph": "/tent/",
+              "meaning": "帐篷",
+              "emoji": "⛺",
+              "phonicsBreakdown": [
+                "t",
+                "e",
+                "nt"
+              ],
+              "example": "Camp in a warm tent."
+            },
+            {
+              "word": "plant",
+              "ph": "/plænt/",
+              "meaning": "植物",
+              "emoji": "🪴",
+              "phonicsBreakdown": [
+                "pl",
+                "a",
+                "nt"
+              ],
+              "example": "A green growing plant."
+            }
+          ]
+        },
+        {
+          "id": "l4-u8",
+          "unitNum": 8,
+          "target": "sk, sc, sp, st (尾缀/连音)",
+          "targetPhonics": "/sk/, /sp/, /st/",
+          "words": [
+            {
+              "word": "desk",
+              "ph": "/desk/",
+              "meaning": "书桌",
+              "emoji": "🪵",
+              "phonicsBreakdown": [
+                "d",
+                "e",
+                "sk"
+              ],
+              "example": "Read a book at your desk."
+            },
+            {
+              "word": "mask",
+              "ph": "/mæsk/",
+              "meaning": "面具/口罩",
+              "emoji": "🎭",
+              "phonicsBreakdown": [
+                "m",
+                "a",
+                "sk"
+              ],
+              "example": "Wear a fun cartoon mask."
+            },
+            {
+              "word": "skate",
+              "ph": "/skeɪt/",
+              "meaning": "滑冰/滑板",
+              "emoji": "⛸️",
+              "phonicsBreakdown": [
+                "sk",
+                "a_e",
+                "te"
+              ],
+              "example": "Skate fast on smooth ice."
+            },
+            {
+              "word": "scarf",
+              "ph": "/skɑːrf/",
+              "meaning": "围巾",
+              "emoji": "🧣",
+              "phonicsBreakdown": [
+                "sc",
+                "ar",
+                "f"
+              ],
+              "example": "Wear a warm wool scarf."
+            },
+            {
+              "word": "vest",
+              "ph": "/vest/",
+              "meaning": "背心",
+              "emoji": "🦺",
+              "phonicsBreakdown": [
+                "v",
+                "e",
+                "st"
+              ],
+              "example": "Wear an orange safety vest."
+            },
+            {
+              "word": "nest",
+              "ph": "/nest/",
+              "meaning": "鸟巢",
+              "emoji": "🪺",
+              "phonicsBreakdown": [
+                "n",
+                "e",
+                "st"
+              ],
+              "example": "Baby birds in the nest."
+            },
+            {
+              "word": "fast",
+              "ph": "/fæst/",
+              "meaning": "快的",
+              "emoji": "⚡",
+              "phonicsBreakdown": [
+                "f",
+                "a",
+                "st"
+              ],
+              "example": "Cheetahs run very fast."
+            },
+            {
+              "word": "last",
+              "ph": "/læst/",
+              "meaning": "最后的",
+              "emoji": "🏁",
+              "phonicsBreakdown": [
+                "l",
+                "a",
+                "st"
+              ],
+              "example": "Cross the final finish line."
+            },
+            {
+              "word": "crisp",
+              "ph": "/krɪsp/",
+              "meaning": "清脆的",
+              "emoji": "🥔",
+              "phonicsBreakdown": [
+                "cr",
+                "i",
+                "sp"
+              ],
+              "example": "Crisp golden potato chips."
+            },
+            {
+              "word": "clasp",
+              "ph": "/klæsp/",
+              "meaning": "扣子/紧握",
+              "emoji": "🔗",
+              "phonicsBreakdown": [
+                "cl",
+                "a",
+                "sp"
+              ],
+              "example": "Fasten the bag clasp."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Level 5",
+      "title": "Letter Combinations (组合字母与特殊读音)",
+      "themeColor": "#0EA5E9",
+      "accentColor": "#38BDF8",
+      "badge": "进阶组合",
+      "desc": "掌握R控制元音(ar, ir, ur, or)、双元音组合(oi, oy, ou, ow, au, aw)、长短oo、软音c/g及不发音辅音",
+      "units": [
+        {
+          "id": "l5-u1",
+          "unitNum": 1,
+          "target": "ar, ir, ur, er (R控元音)",
+          "targetPhonics": "/ɑːr/, /ɜːr/, /ər/",
+          "words": [
+            {
+              "word": "car",
+              "ph": "/kɑːr/",
+              "meaning": "汽车",
+              "emoji": "🚗",
+              "phonicsBreakdown": [
+                "c",
+                "ar"
+              ],
+              "example": "A fast red sports car."
+            },
+            {
+              "word": "star",
+              "ph": "/stɑːr/",
+              "meaning": "星星",
+              "emoji": "⭐",
+              "phonicsBreakdown": [
+                "st",
+                "ar"
+              ],
+              "example": "Stars shine bright at night."
+            },
+            {
+              "word": "park",
+              "ph": "/pɑːrk/",
+              "meaning": "公园",
+              "emoji": "🏞️",
+              "phonicsBreakdown": [
+                "p",
+                "ar",
+                "k"
+              ],
+              "example": "Have fun at the park."
+            },
+            {
+              "word": "farm",
+              "ph": "/fɑːrm/",
+              "meaning": "农场",
+              "emoji": "🚜",
+              "phonicsBreakdown": [
+                "f",
+                "ar",
+                "m"
+              ],
+              "example": "Cows and sheep on the farm."
+            },
+            {
+              "word": "bird",
+              "ph": "/bɜːrd/",
+              "meaning": "小鸟",
+              "emoji": "🐦",
+              "phonicsBreakdown": [
+                "b",
+                "ir",
+                "d"
+              ],
+              "example": "The blue bird sings sweet songs."
+            },
+            {
+              "word": "girl",
+              "ph": "/ɡɜːrl/",
+              "meaning": "女孩",
+              "emoji": "👧",
+              "phonicsBreakdown": [
+                "g",
+                "ir",
+                "l"
+              ],
+              "example": "A clever girl reads books."
+            },
+            {
+              "word": "shirt",
+              "ph": "/ʃɜːrt/",
+              "meaning": "衬衫",
+              "emoji": "👔",
+              "phonicsBreakdown": [
+                "sh",
+                "ir",
+                "t"
+              ],
+              "example": "Wear a clean white shirt."
+            },
+            {
+              "word": "skirt",
+              "ph": "/skɜːrt/",
+              "meaning": "短裙",
+              "emoji": "👗",
+              "phonicsBreakdown": [
+                "sk",
+                "ir",
+                "t"
+              ],
+              "example": "A pretty yellow skirt."
+            },
+            {
+              "word": "nurse",
+              "ph": "/nɜːrs/",
+              "meaning": "护士",
+              "emoji": "👩‍⚕️",
+              "phonicsBreakdown": [
+                "n",
+                "ur",
+                "se"
+              ],
+              "example": "The kind hospital nurse."
+            },
+            {
+              "word": "purse",
+              "ph": "/pɜːrs/",
+              "meaning": "手提包",
+              "emoji": "👛",
+              "phonicsBreakdown": [
+                "p",
+                "ur",
+                "se"
+              ],
+              "example": "Coins inside the purse."
+            },
+            {
+              "word": "turtle",
+              "ph": "/ˈtɜːr.təl/",
+              "meaning": "乌龟",
+              "emoji": "🐢",
+              "phonicsBreakdown": [
+                "t",
+                "ur",
+                "tle"
+              ],
+              "example": "A green sea turtle swims."
+            },
+            {
+              "word": "sister",
+              "ph": "/ˈsɪs.tər/",
+              "meaning": "姐妹",
+              "emoji": "👭",
+              "phonicsBreakdown": [
+                "s",
+                "i",
+                "s",
+                "ter"
+              ],
+              "example": "My loving big sister."
+            },
+            {
+              "word": "flower",
+              "ph": "/ˈflaʊ.ər/",
+              "meaning": "花朵",
+              "emoji": "🌸",
+              "phonicsBreakdown": [
+                "fl",
+                "ow",
+                "er"
+              ],
+              "example": "A blooming garden flower."
+            }
+          ]
+        },
+        {
+          "id": "l5-u2",
+          "unitNum": 2,
+          "target": "or, ore, oar, eer, ear, air",
+          "targetPhonics": "/ɔːr/, /ɪər/, /er/",
+          "words": [
+            {
+              "word": "fork",
+              "ph": "/fɔːrk/",
+              "meaning": "叉子",
+              "emoji": "🍴",
+              "phonicsBreakdown": [
+                "f",
+                "or",
+                "k"
+              ],
+              "example": "Eat noodles with a fork."
+            },
+            {
+              "word": "horse",
+              "ph": "/hɔːrs/",
+              "meaning": "马",
+              "emoji": "🐴",
+              "phonicsBreakdown": [
+                "h",
+                "or",
+                "se"
+              ],
+              "example": "Ride a strong horse."
+            },
+            {
+              "word": "corn",
+              "ph": "/kɔːrn/",
+              "meaning": "玉米",
+              "emoji": "🌽",
+              "phonicsBreakdown": [
+                "c",
+                "or",
+                "n"
+              ],
+              "example": "Sweet yellow corn cob."
+            },
+            {
+              "word": "morning",
+              "ph": "/ˈmɔːr.nɪŋ/",
+              "meaning": "早晨",
+              "emoji": "🌅",
+              "phonicsBreakdown": [
+                "m",
+                "or",
+                "ning"
+              ],
+              "example": "Good sunny morning."
+            },
+            {
+              "word": "shore",
+              "ph": "/ʃɔːr/",
+              "meaning": "海岸",
+              "emoji": "🏖️",
+              "phonicsBreakdown": [
+                "sh",
+                "ore"
+              ],
+              "example": "Waves crash on shore."
+            },
+            {
+              "word": "deer",
+              "ph": "/dɪər/",
+              "meaning": "小鹿",
+              "emoji": "🦌",
+              "phonicsBreakdown": [
+                "d",
+                "eer"
+              ],
+              "example": "A gentle forest deer."
+            },
+            {
+              "word": "cheer",
+              "ph": "/tʃɪər/",
+              "meaning": "欢呼",
+              "emoji": "🎉",
+              "phonicsBreakdown": [
+                "ch",
+                "eer"
+              ],
+              "example": "Cheer loudly for friends."
+            },
+            {
+              "word": "ear",
+              "ph": "/ɪər/",
+              "meaning": "耳朵",
+              "emoji": "👂",
+              "phonicsBreakdown": [
+                "ear"
+              ],
+              "example": "Listen with your ear."
+            },
+            {
+              "word": "tear",
+              "ph": "/tɪər/",
+              "meaning": "眼泪",
+              "emoji": "💧",
+              "phonicsBreakdown": [
+                "t",
+                "ear"
+              ],
+              "example": "Wipe away the tear."
+            },
+            {
+              "word": "chair",
+              "ph": "/tʃer/",
+              "meaning": "椅子",
+              "emoji": "🪑",
+              "phonicsBreakdown": [
+                "ch",
+                "air"
+              ],
+              "example": "Sit on the wooden chair."
+            },
+            {
+              "word": "hair",
+              "ph": "/her/",
+              "meaning": "头发",
+              "emoji": "💇",
+              "phonicsBreakdown": [
+                "h",
+                "air"
+              ],
+              "example": "Comb your soft shiny hair."
+            },
+            {
+              "word": "pair",
+              "ph": "/per/",
+              "meaning": "一双",
+              "emoji": "👟",
+              "phonicsBreakdown": [
+                "p",
+                "air"
+              ],
+              "example": "A new pair of shoes."
+            }
+          ]
+        },
+        {
+          "id": "l5-u3",
+          "unitNum": 3,
+          "target": "oi, oy, ou, ow",
+          "targetPhonics": "/ɔɪ/, /aʊ/",
+          "words": [
+            {
+              "word": "coin",
+              "ph": "/kɔɪn/",
+              "meaning": "硬币",
+              "emoji": "🪙",
+              "phonicsBreakdown": [
+                "c",
+                "oi",
+                "n"
+              ],
+              "example": "A shiny gold coin."
+            },
+            {
+              "word": "oil",
+              "ph": "/ɔɪl/",
+              "meaning": "油",
+              "emoji": "🛢️",
+              "phonicsBreakdown": [
+                "oil"
+              ],
+              "example": "Cooking oil in pan."
+            },
+            {
+              "word": "soil",
+              "ph": "/sɔɪl/",
+              "meaning": "土壤",
+              "emoji": "🌱",
+              "phonicsBreakdown": [
+                "s",
+                "oi",
+                "l"
+              ],
+              "example": "Plant seeds into dark soil."
+            },
+            {
+              "word": "boy",
+              "ph": "/bɔɪ/",
+              "meaning": "男孩",
+              "emoji": "👦",
+              "phonicsBreakdown": [
+                "b",
+                "oy"
+              ],
+              "example": "A happy little boy."
+            },
+            {
+              "word": "toy",
+              "ph": "/tɔɪ/",
+              "meaning": "玩具",
+              "emoji": "🧸",
+              "phonicsBreakdown": [
+                "t",
+                "oy"
+              ],
+              "example": "Play with your favorite toy."
+            },
+            {
+              "word": "joy",
+              "ph": "/dʒɔɪ/",
+              "meaning": "喜悦",
+              "emoji": "🥳",
+              "phonicsBreakdown": [
+                "j",
+                "oy"
+              ],
+              "example": "Jump with great joy."
+            },
+            {
+              "word": "house",
+              "ph": "/haʊs/",
+              "meaning": "房子",
+              "emoji": "🏠",
+              "phonicsBreakdown": [
+                "h",
+                "ou",
+                "se"
+              ],
+              "example": "Our cozy home house."
+            },
+            {
+              "word": "mouse",
+              "ph": "/maʊs/",
+              "meaning": "老鼠",
+              "emoji": "🐭",
+              "phonicsBreakdown": [
+                "m",
+                "ou",
+                "se"
+              ],
+              "example": "A small grey mouse."
+            },
+            {
+              "word": "cloud",
+              "ph": "/klaʊd/",
+              "meaning": "云朵",
+              "emoji": "☁️",
+              "phonicsBreakdown": [
+                "cl",
+                "ou",
+                "d"
+              ],
+              "example": "A fluffy white cloud."
+            },
+            {
+              "word": "cow",
+              "ph": "/kaʊ/",
+              "meaning": "奶牛",
+              "emoji": "🐄",
+              "phonicsBreakdown": [
+                "c",
+                "ow"
+              ],
+              "example": "The dairy cow gives milk."
+            },
+            {
+              "word": "clown",
+              "ph": "/klaʊn/",
+              "meaning": "小丑",
+              "emoji": "🤡",
+              "phonicsBreakdown": [
+                "cl",
+                "ow",
+                "n"
+              ],
+              "example": "The circus clown is funny."
+            },
+            {
+              "word": "brown",
+              "ph": "/braʊn/",
+              "meaning": "棕色",
+              "emoji": "🟫",
+              "phonicsBreakdown": [
+                "br",
+                "ow",
+                "n"
+              ],
+              "example": "A big brown bear."
+            }
+          ]
+        },
+        {
+          "id": "l5-u4",
+          "unitNum": 4,
+          "target": "au, aw, all, wa",
+          "targetPhonics": "/ɔː/, /wɒ/",
+          "words": [
+            {
+              "word": "autumn",
+              "ph": "/ˈɔː.təm/",
+              "meaning": "秋天",
+              "emoji": "🍂",
+              "phonicsBreakdown": [
+                "au",
+                "tu",
+                "mn"
+              ],
+              "example": "Golden maple leaves in autumn."
+            },
+            {
+              "word": "sauce",
+              "ph": "/sɔːs/",
+              "meaning": "酱汁",
+              "emoji": "🥫",
+              "phonicsBreakdown": [
+                "s",
+                "au",
+                "ce"
+              ],
+              "example": "Tomato pasta sauce."
+            },
+            {
+              "word": "draw",
+              "ph": "/drɔː/",
+              "meaning": "绘画",
+              "emoji": "🎨",
+              "phonicsBreakdown": [
+                "dr",
+                "aw"
+              ],
+              "example": "Draw a bright sun."
+            },
+            {
+              "word": "saw",
+              "ph": "/sɔː/",
+              "meaning": "锯子/看见",
+              "emoji": "🪚",
+              "phonicsBreakdown": [
+                "s",
+                "aw"
+              ],
+              "example": "Cut wood with a saw."
+            },
+            {
+              "word": "paw",
+              "ph": "/pɔː/",
+              "meaning": "爪子",
+              "emoji": "🐾",
+              "phonicsBreakdown": [
+                "p",
+                "aw"
+              ],
+              "example": "The kitten's soft paw."
+            },
+            {
+              "word": "ball",
+              "ph": "/bɔːl/",
+              "meaning": "球",
+              "emoji": "⚽",
+              "phonicsBreakdown": [
+                "b",
+                "all"
+              ],
+              "example": "Kick the soccer ball."
+            },
+            {
+              "word": "tall",
+              "ph": "/tɔːl/",
+              "meaning": "高的",
+              "emoji": "🦒",
+              "phonicsBreakdown": [
+                "t",
+                "all"
+              ],
+              "example": "The giraffe is tall."
+            },
+            {
+              "word": "wall",
+              "ph": "/wɔːl/",
+              "meaning": "墙壁",
+              "emoji": "🧱",
+              "phonicsBreakdown": [
+                "w",
+                "all"
+              ],
+              "example": "Paint the brick wall."
+            },
+            {
+              "word": "small",
+              "ph": "/smɔːl/",
+              "meaning": "小的",
+              "emoji": "🤏",
+              "phonicsBreakdown": [
+                "sm",
+                "all"
+              ],
+              "example": "A tiny small ant."
+            },
+            {
+              "word": "walk",
+              "ph": "/wɔːk/",
+              "meaning": "散步",
+              "emoji": "🚶",
+              "phonicsBreakdown": [
+                "wa",
+                "l",
+                "k"
+              ],
+              "example": "Take a morning walk."
+            },
+            {
+              "word": "water",
+              "ph": "/ˈwɔː.tər/",
+              "meaning": "水",
+              "emoji": "💧",
+              "phonicsBreakdown": [
+                "wa",
+                "ter"
+              ],
+              "example": "Drink pure clean water."
+            },
+            {
+              "word": "wash",
+              "ph": "/wɒʃ/",
+              "meaning": "清洗",
+              "emoji": "🧼",
+              "phonicsBreakdown": [
+                "wa",
+                "sh"
+              ],
+              "example": "Wash hands with soap."
+            }
+          ]
+        },
+        {
+          "id": "l5-u5",
+          "unitNum": 5,
+          "target": "oo (长音/短音), u",
+          "targetPhonics": "/uː/, /ʊ/",
+          "words": [
+            {
+              "word": "moon",
+              "ph": "/muːn/",
+              "meaning": "月亮",
+              "emoji": "🌙",
+              "phonicsBreakdown": [
+                "m",
+                "oo",
+                "n"
+              ],
+              "example": "The silver moon glows in the night sky."
+            },
+            {
+              "word": "boot",
+              "ph": "/buːt/",
+              "meaning": "靴子",
+              "emoji": "👢",
+              "phonicsBreakdown": [
+                "b",
+                "oo",
+                "t"
+              ],
+              "example": "Put on your warm winter boots."
+            },
+            {
+              "word": "spoon",
+              "ph": "/spuːn/",
+              "meaning": "勺子",
+              "emoji": "🥄",
+              "phonicsBreakdown": [
+                "sp",
+                "oo",
+                "n"
+              ],
+              "example": "Eat delicious soup with a spoon."
+            },
+            {
+              "word": "zoo",
+              "ph": "/zuː/",
+              "meaning": "动物园",
+              "emoji": "🦁",
+              "phonicsBreakdown": [
+                "z",
+                "oo"
+              ],
+              "example": "See monkeys and lions at the zoo."
+            },
+            {
+              "word": "book",
+              "ph": "/bʊk/",
+              "meaning": "书本",
+              "emoji": "📖",
+              "phonicsBreakdown": [
+                "b",
+                "oo",
+                "k"
+              ],
+              "example": "Read an exciting story book."
+            },
+            {
+              "word": "cook",
+              "ph": "/kʊk/",
+              "meaning": "做饭/厨师",
+              "emoji": "👨‍🍳",
+              "phonicsBreakdown": [
+                "c",
+                "oo",
+                "k"
+              ],
+              "example": "Cook tasty dinner for family."
+            },
+            {
+              "word": "foot",
+              "ph": "/fʊt/",
+              "meaning": "脚",
+              "emoji": "🦶",
+              "phonicsBreakdown": [
+                "f",
+                "oo",
+                "t"
+              ],
+              "example": "Tap your left foot to the beat."
+            },
+            {
+              "word": "wood",
+              "ph": "/wʊd/",
+              "meaning": "木头",
+              "emoji": "🪵",
+              "phonicsBreakdown": [
+                "w",
+                "oo",
+                "d"
+              ],
+              "example": "Make a chair out of solid wood."
+            },
+            {
+              "word": "push",
+              "ph": "/pʊʃ/",
+              "meaning": "推动",
+              "emoji": "🫸",
+              "phonicsBreakdown": [
+                "p",
+                "u",
+                "sh"
+              ],
+              "example": "Push the door open gently."
+            },
+            {
+              "word": "pull",
+              "ph": "/pʊl/",
+              "meaning": "拉动",
+              "emoji": "🫷",
+              "phonicsBreakdown": [
+                "p",
+                "u",
+                "ll"
+              ],
+              "example": "Pull the rope with both hands."
+            },
+            {
+              "word": "bull",
+              "ph": "/bʊl/",
+              "meaning": "公牛",
+              "emoji": "🐂",
+              "phonicsBreakdown": [
+                "b",
+                "u",
+                "ll"
+              ],
+              "example": "The strong bull stands in the field."
+            }
+          ]
+        },
+        {
+          "id": "l5-u6",
+          "unitNum": 6,
+          "target": "软音 c /s/, 软音 g /dʒ/",
+          "targetPhonics": "/s/, /dʒ/",
+          "words": [
+            {
+              "word": "city",
+              "ph": "/ˈsɪt.i/",
+              "meaning": "城市",
+              "emoji": "🏙️",
+              "phonicsBreakdown": [
+                "c",
+                "i",
+                "ty"
+              ],
+              "example": "A bustling modern city."
+            },
+            {
+              "word": "circle",
+              "ph": "/ˈsɜːr.kəl/",
+              "meaning": "圆形",
+              "emoji": "⭕",
+              "phonicsBreakdown": [
+                "c",
+                "ir",
+                "cle"
+              ],
+              "example": "Draw a perfect round circle."
+            },
+            {
+              "word": "pencil",
+              "ph": "/ˈpen.səl/",
+              "meaning": "铅笔",
+              "emoji": "✏️",
+              "phonicsBreakdown": [
+                "pen",
+                "c",
+                "il"
+              ],
+              "example": "Write with a sharp pencil."
+            },
+            {
+              "word": "ice",
+              "ph": "/aɪs/",
+              "meaning": "冰块",
+              "emoji": "🧊",
+              "phonicsBreakdown": [
+                "i_e",
+                "ce"
+              ],
+              "example": "Cold ice cubes in the drink."
+            },
+            {
+              "word": "mice",
+              "ph": "/maɪs/",
+              "meaning": "老鼠(复数)",
+              "emoji": "🐭",
+              "phonicsBreakdown": [
+                "m",
+                "i_e",
+                "ce"
+              ],
+              "example": "Two little mice run away."
+            },
+            {
+              "word": "rice",
+              "ph": "/raɪs/",
+              "meaning": "米饭",
+              "emoji": "🍚",
+              "phonicsBreakdown": [
+                "r",
+                "i_e",
+                "ce"
+              ],
+              "example": "Eat a bowl of warm rice."
+            },
+            {
+              "word": "gem",
+              "ph": "/dʒem/",
+              "meaning": "宝石",
+              "emoji": "💎",
+              "phonicsBreakdown": [
+                "g",
+                "e",
+                "m"
+              ],
+              "example": "A sparkling purple gem."
+            },
+            {
+              "word": "giraffe",
+              "ph": "/dʒɪˈræf/",
+              "meaning": "长颈鹿",
+              "emoji": "🦒",
+              "phonicsBreakdown": [
+                "g",
+                "i",
+                "raffe"
+              ],
+              "example": "The giraffe eats leaves up high."
+            },
+            {
+              "word": "page",
+              "ph": "/peɪdʒ/",
+              "meaning": "页面",
+              "emoji": "📄",
+              "phonicsBreakdown": [
+                "p",
+                "a_e",
+                "ge"
+              ],
+              "example": "Turn to the next page."
+            },
+            {
+              "word": "cage",
+              "ph": "/keɪdʒ/",
+              "meaning": "笼子",
+              "emoji": "🪤",
+              "phonicsBreakdown": [
+                "c",
+                "a_e",
+                "ge"
+              ],
+              "example": "A clean bird cage."
+            },
+            {
+              "word": "orange",
+              "ph": "/ˈɒr.ɪndʒ/",
+              "meaning": "橙子/橙色",
+              "emoji": "🍊",
+              "phonicsBreakdown": [
+                "o",
+                "ran",
+                "ge"
+              ],
+              "example": "Peel a sweet juicy orange."
+            }
+          ]
+        },
+        {
+          "id": "l5-u7",
+          "unitNum": 7,
+          "target": "wr, kn, mb, rh (不发音字母组合)",
+          "targetPhonics": "/r/, /n/, /m/",
+          "words": [
+            {
+              "word": "write",
+              "ph": "/raɪt/",
+              "meaning": "书写",
+              "emoji": "✍️",
+              "phonicsBreakdown": [
+                "wr",
+                "i_e",
+                "te"
+              ],
+              "example": "Write a letter to your grandma."
+            },
+            {
+              "word": "wrap",
+              "ph": "/ræp/",
+              "meaning": "包裹",
+              "emoji": "🎁",
+              "phonicsBreakdown": [
+                "wr",
+                "a",
+                "p"
+              ],
+              "example": "Wrap the birthday present nicely."
+            },
+            {
+              "word": "wrist",
+              "ph": "/rɪst/",
+              "meaning": "手腕",
+              "emoji": "💪",
+              "phonicsBreakdown": [
+                "wr",
+                "i",
+                "st"
+              ],
+              "example": "Wear a watch on your wrist."
+            },
+            {
+              "word": "knee",
+              "ph": "/niː/",
+              "meaning": "膝盖",
+              "emoji": "🦵",
+              "phonicsBreakdown": [
+                "kn",
+                "ee"
+              ],
+              "example": "Bend your left knee."
+            },
+            {
+              "word": "knife",
+              "ph": "/naɪf/",
+              "meaning": "小刀",
+              "emoji": "🔪",
+              "phonicsBreakdown": [
+                "kn",
+                "i_e",
+                "fe"
+              ],
+              "example": "Cut an apple with a butter knife."
+            },
+            {
+              "word": "knot",
+              "ph": "/nɒt/",
+              "meaning": "绳结",
+              "emoji": "🪢",
+              "phonicsBreakdown": [
+                "kn",
+                "o",
+                "t"
+              ],
+              "example": "Tie a tight sturdy knot."
+            },
+            {
+              "word": "knit",
+              "ph": "/nɪt/",
+              "meaning": "编织",
+              "emoji": "🧶",
+              "phonicsBreakdown": [
+                "kn",
+                "i",
+                "t"
+              ],
+              "example": "Knit a warm winter scarf."
+            },
+            {
+              "word": "lamb",
+              "ph": "/læm/",
+              "meaning": "小羊",
+              "emoji": "🐑",
+              "phonicsBreakdown": [
+                "l",
+                "a",
+                "mb"
+              ],
+              "example": "A sweet fluffy white lamb."
+            },
+            {
+              "word": "comb",
+              "ph": "/koʊm/",
+              "meaning": "梳子/梳理",
+              "emoji": "🪮",
+              "phonicsBreakdown": [
+                "c",
+                "o",
+                "mb"
+              ],
+              "example": "Comb your messy hair."
+            },
+            {
+              "word": "climb",
+              "ph": "/klaɪm/",
+              "meaning": "攀爬",
+              "emoji": "🧗",
+              "phonicsBreakdown": [
+                "cl",
+                "i",
+                "mb"
+              ],
+              "example": "Climb up the tall tree."
+            },
+            {
+              "word": "rhino",
+              "ph": "/ˈraɪ.noʊ/",
+              "meaning": "犀牛",
+              "emoji": "🦏",
+              "phonicsBreakdown": [
+                "rh",
+                "i",
+                "no"
+              ],
+              "example": "The rhino has a big sturdy horn."
+            }
+          ]
+        },
+        {
+          "id": "l5-u8",
+          "unitNum": 8,
+          "target": "-tion, -sion, ph, gh (常见词尾与特殊音)",
+          "targetPhonics": "/ʃən/, /ʒən/, /f/",
+          "words": [
+            {
+              "word": "station",
+              "ph": "/ˈsteɪ.ʃən/",
+              "meaning": "车站",
+              "emoji": "🚉",
+              "phonicsBreakdown": [
+                "sta",
+                "tion"
+              ],
+              "example": "Wait for the train at the station."
+            },
+            {
+              "word": "action",
+              "ph": "/ˈæk.ʃən/",
+              "meaning": "动作/行动",
+              "emoji": "🎬",
+              "phonicsBreakdown": [
+                "ac",
+                "tion"
+              ],
+              "example": "Lights, camera, action!"
+            },
+            {
+              "word": "motion",
+              "ph": "/ˈmoʊ.ʃən/",
+              "meaning": "运动/移动",
+              "emoji": "🌊",
+              "phonicsBreakdown": [
+                "mo",
+                "tion"
+              ],
+              "example": "The rhythmic motion of ocean waves."
+            },
+            {
+              "word": "television",
+              "ph": "/ˈtel.ə.vɪʒ.ən/",
+              "meaning": "电视机",
+              "emoji": "📺",
+              "phonicsBreakdown": [
+                "tele",
+                "vi",
+                "sion"
+              ],
+              "example": "Watch cartoons on television."
+            },
+            {
+              "word": "vision",
+              "ph": "/ˈvɪʒ.ən/",
+              "meaning": "视力/愿景",
+              "emoji": "👁️",
+              "phonicsBreakdown": [
+                "vi",
+                "sion"
+              ],
+              "example": "Clear and sharp eyesight vision."
+            },
+            {
+              "word": "laugh",
+              "ph": "/læf/",
+              "meaning": "笑",
+              "emoji": "😄",
+              "phonicsBreakdown": [
+                "l",
+                "au",
+                "gh"
+              ],
+              "example": "Laugh out loud with good friends."
+            },
+            {
+              "word": "cough",
+              "ph": "/kɒf/",
+              "meaning": "咳嗽",
+              "emoji": "😷",
+              "phonicsBreakdown": [
+                "c",
+                "ou",
+                "gh"
+              ],
+              "example": "Cover your mouth when you cough."
+            },
+            {
+              "word": "dolphin",
+              "ph": "/ˈdɒl.fɪn/",
+              "meaning": "海豚",
+              "emoji": "🐬",
+              "phonicsBreakdown": [
+                "dol",
+                "ph",
+                "in"
+              ],
+              "example": "Playful dolphins jump over the waves."
+            },
+            {
+              "word": "elephant",
+              "ph": "/ˈel.ɪ.fənt/",
+              "meaning": "大象",
+              "emoji": "🐘",
+              "phonicsBreakdown": [
+                "ele",
+                "ph",
+                "ant"
+              ],
+              "example": "The gentle giant grey elephant."
+            }
+          ]
+        }
+      ]
     }
   ]
 };
+
 if (typeof module !== "undefined") { module.exports = PHONICS_DATA; }
