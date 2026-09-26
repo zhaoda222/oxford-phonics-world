@@ -2,7 +2,8 @@
 class PhonicsApp {
   constructor(data) {
     this.data = data;
-    this.currentLevelId = 1;
+    const savedLvl = parseInt(localStorage.getItem("opw_current_level") || "1", 10);
+    this.currentLevelId = (savedLvl >= 1 && savedLvl <= 5) ? savedLvl : 1;
     this.currentTab = 'learn'; // 'learn', 'flashcards', 'quiz', 'spell'
     this.currentUnit = null;
     this.stars = parseInt(localStorage.getItem('opw_stars') || '0', 10);
@@ -71,6 +72,14 @@ class PhonicsApp {
   renderHeaderStats() {
     if (this.elStarCount) {
       this.elStarCount.innerText = this.stars;
+    }
+    const elProgress = document.getElementById("progress-count");
+    if (elProgress) {
+      let totalUnits = 0;
+      this.data.levels.forEach(lvl => totalUnits += lvl.units.length);
+      const completedCount = this.completedUnits.length;
+      const pct = totalUnits > 0 ? Math.round((completedCount / totalUnits) * 100) : 0;
+      elProgress.innerText = completedCount + "/" + totalUnits + " (" + pct + "%)";
     }
   }
 
